@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="bg-layer"></div>
+
+<!-- 🎧 MUSIC & SOUND -->
+<audio id="bgMusic" preload="auto" loop>
+  <source src="music/about-you.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="rainSound" preload="auto" loop>
+  <source src="music/rain.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="clickSound" preload="auto">
+  <source src="music/click.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="heartBeat" preload="auto">
+  <source src="music/heartbeat.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="endingSound">
+  <<source src="music/ending.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="aiVoice"></audio>
+
+<!-- ================= HOME ================= -->
+
+<div id="intro" class="intro-screen">
+
+    <div class="intro-card">
+        <h2>To My Favorite Person ✨</h2>
+        <p>Open this little story</p>
+
+        <button onclick="startExperience()">
+            Enter ✨
+        </button>
+    </div>
+
+</div>
+
+<div id="homePage" class="page active">
+  <div class="home-card">
+    <h1>Pieces of Us 🤍</h1>
+
+    <p class="special-text">
+    made especially for
+    <span>Ega Nugraha</span>
+    </p>
+
+    <button onclick="showPage('slidePage')">▶ Start Story</button>
+    <button onclick="showPage('messagePage')">💌 Pesan Untuk Kamu</button>
+    <button onclick="showPage('endingPage')">🏁 Ending</button>
+  </div>
+</div>
+
+<!-- ================= SLIDE (30 FOTO) ================= -->
+<div id="slidePage" class="page">
+
+<div class="slider-wrapper">
+
+<div class="slider">
+
+<!-- 30 SLIDES -->
+<div class="slide active"><img src="img/foto1.jpeg"><div class="caption">every picture of you feels like home 🤍</div></div>
+<div class="slide"><img src="img/foto2.jpeg"><div class="caption">i like the way you make everything feel calm</div></div>
+<div class="slide"><img src="img/foto3.jpeg"><div class="caption">your smile stays in my mind longer than it should</div></div>
+<div class="slide"><img src="img/foto4.jpeg"><div class="caption">somehow you always become my favorite view</div></div>
+<div class="slide"><img src="img/foto5.jpeg"><div class="caption">little moments with you mean a lot to me</div></div>
+<div class="slide"><img src="img/foto6.jpeg"><div class="caption">you make ordinary days feel special</div></div>
+<div class="slide"><img src="img/foto7.jpeg">"><div class="caption">i still smile when i look at this photo</div></div>
+<div class="slide"><img src="img/foto8.jpeg"><div class="caption">your presence feels warm and comforting</div></div>
+<div class="slide"><img src="img/foto9.jpeg"><div class="caption">maybe this is what safe feels like</div></div>
+<div class="slide"><img src="img/foto10.jpeg"><div class="caption">i never get tired of looking at you</div></div>
+
+<div class="slide"><img src="img/foto11.jpeg"><div class="caption">every version of you is beautiful to me</div></div>
+<div class="slide"><img src="img/foto12.jpeg"><div class="caption">thank you for existing in my life ✨</div></div>
+<div class="slide"><img src="img/foto13.jpeg"><div class="caption">some feelings are impossible to explain</div></div>
+<div class="slide"><img src="img/foto14.jpeg"><div class="caption">you are softly becoming my favorite person</div></div>
+<div class="slide"><img src="img/foto15.jpeg"><div class="caption">your eyes hold so much peace</div></div>
+<div class="slide"><img src="img/foto16.jpeg"><div class="caption">this moment deserves to be remembered forever</div></div>
+<div class="slide"><img src="img/foto17.jpeg"><div class="caption">i love the energy you bring into my world</div></div>
+<div class="slide"><img src="img/foto18.jpeg"><div class="caption">even silence feels nice with you</div></div>
+<div class="slide"><img src="img/foto19.jpeg"><div class="caption">you make my heart feel lighter</div></div>
+<div class="slide"><img src="img/foto20.jpeg"><div class="caption">maybe you don’t realize how special you are</div></div>
+
+<div class="slide"><img src="img/foto21.jpeg"><div class="caption">i found comfort in you unexpectedly</div></div>
+<div class="slide"><img src="img/foto22.jpeg"><div class="caption">everything feels softer around you</div></div>
+<div class="slide"><img src="img/foto23.jpeg"><div class="caption">you look like a beautiful memory here</div></div>
+<div class="slide"><img src="img/foto24.jpeg"><div class="caption">this photo carries a feeling i can’t describe</div></div>
+<div class="slide"><img src="img/foto25.jpeg"><div class="caption">sometimes i wonder how i got this lucky</div></div>
+<div class="slide"><img src="img/foto26.jpeg"><div class="caption">being close to you feels different</div></div>
+<div class="slide"><img src="img/foto27.jpeg"><div class="caption">you are my favorite coincidence 🤍</div></div>
+<div class="slide"><img src="img/foto28.jpeg"><div class="caption">every little thing about you matters to me</div></div>
+<div class="slide"><img src="img/foto29.jpeg"><div class="caption">thank you for all the moments we shared</div></div>
+<div class="slide"><img src="img/foto30.jpeg"><div class="caption">this was never just about photos… it was always about you ✨</div></div>
+
+</div>
+
+</div>
+
+<div class="panel">
+<button onclick="prevSlide()">⬅ Prev</button>
+<button onclick="nextSlide()">Next ➡</button>
+<button onclick="showPage('homePage')">⬅ Back</button>
+</div>
+
+</div>
+
+<!-- ================= MESSAGE ================= -->
+<div id="messagePage" class="page">
+
+<div class="center-box">
+<h2 class="glow-title">
+💌 Little Things I Feel About You 
+</h2>
+<div id="messages"></div>
+
+<button onclick="showPage('homePage')">⬅ Kembali</button>
+</div>
+
+</div>
+
+<!-- ================= ENDING ================= -->
+<div id="endingPage" class="page">
+
+<div class="ending">
+
+<img src="img/foto31.jpeg" class="end-photo">
+
+<h1 class="ending-title">
+Thank You For Watching Sayangkuu 🤍
+</h1>
+
+<p class="ending-text">
+from the girl who loves you the most,
+</p>
+
+<h3>Tita Septianawati 🎀</h3>
+
+<button onclick="showPage('homePage')">⬅ Kembali</button>
+
+</div>
+
+</div>
+
+<div class="hearts">
+  <span>🤍</span>
+  <span>💖</span>
+  <span>💕</span>
+  <span>💗</span>
+  <span>🤍</span>
+  <span>💞</span>
+  <span>💘</span>
+  <span>💝</span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
